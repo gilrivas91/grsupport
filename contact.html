@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contact Me</title>
+        <link rel="icon" href="gil2.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Open+Sans:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+        
+        
+        <link href="css/contact.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> <!--This allows the hamburger/3 dashes when view is smaller, to view the other pages/links-->
+    </head>
+    <body>
+       <nav class="top-nav">
+                        <a href="index1.html">Home</a>
+                        <a href="services.html">Skills</a>
+                        <a href="recommendations.html">Recommendations</a>
+                        <a href="kudos.html">Recognition</a>
+        
+    </nav>
+        <header>
+        </header>
+        <main>
+    
+          <form action="#" method="POST"> </form><!--This is for the submit to reload the same page when message button is sent--> 
+            <h2 class="contact-title">Contact Me</h2>
+        <div class="mb-3"> <!--MB-3= margin, bottom, 3 size; bootstrap spacing and styling-->
+        <label for="fullname" class="form-label"><b>Full Name</b></label>
+        <input type="text" class="form-control" id="fullname" name="fullname" required>
+       </div>
+        <div class="mb-3">
+            <label for="email" class="form-label"><b>Email Address</b></label>
+            <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label"><b>Phone Number</b></label>
+            <input type="tel" class="form-control" id="phone" name="phone" 
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                placeholder="123-456-7890" required>
+            <div class="form-text">Format: 123-456-7890</div>
+        </div>
+        <fieldset class="mb-3">
+        <legend class="col-form-label pt-0">Type of Opportunity:</legend><!--pt-0 stands for padding, top, 0 for no padding to style text and aligns inputs-->
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="opportunitytype" id="fulltime" value="Full-Time" required>
+            <label class="form-check-label" for="fulltime">Full-Time</label><!--form check is a container wrapper made for checkboxes and radio buttons for styling-->
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="opportunitytype" id="parttime" value="Part-Time" required>
+            <label class="form-check-label" for="parttime">Part-Time</label><!--applies styling to the label with prebuilt spacing, text alignment, text styles-->
+        </div>
+        </fieldset>
+        <fieldset class="mb-3">
+        <legend class="col-form-label pt-0">Services of Interest:</legend>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="pcsupport" id="pcsupport" name="services[]"><!--type defines what kind of input it is-->
+            <label class="form-check-label" for="pcsupport">PC Support</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="voip" id="voip" name="services[]">
+            <label class="form-check-label" for="voip">VOIP Systems</label> 
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="security" id="security" name="services[]"> <!--name=services[] groups/organizes values better-->
+            <label class="form-check-label" for="security">Security Training</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="asset" id="asset" name="services[]">
+            <label class="form-check-label" for="asset">Asset Management</label>
+        </div>
+    </fieldset> <!--Fieldset groups related inputs together-->
+
+        <div class="mb-3">
+            <label for="contactmethod" class="form-lable"><b>Preferred Contact Method:</b></label>
+            <select class="form-select" id="contactmethod" required>
+            <option value="">Choose one...</option>
+            <option>Email</option>
+            <option>Phone</option>
+            <option>LinkedIn</option>
+            </select>   
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label"><b>Message:</b></label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="consent" required>
+                <label class="form-check-label" for="consent"><b>I agree to be contacted about this inquiry.</b></label>
+            </div>
+            <button type="submit" class="btn btn-primary my-button"><b>Send Message</b></button>
+    
+        <!--Form goes here-->
+        </main>
+    </body>
+</html>
