@@ -1,0 +1,15 @@
+h1 {
+  color:#1E6FB7;
+  text-align: center;
+  font-size:larger;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+p {
+  color:black;
+  width: fit-content; /*shrinks the width of the paragraph to fit the content*/
+  border: 4px solid black; /*adds a border around the paragraph*/
+  padding: 20px; /*adds space between the text and the border*/
+  font-family: 'space grotesk', sans-serif;
+}
